@@ -1,0 +1,33 @@
+# pfc-kafka-consumer configuration
+
+[kafka]
+brokers           = ["localhost:9092"]
+topics            = ["app-logs", "access-logs"]
+group_id          = "pfc-consumer"
+auto_offset_reset = "earliest"   # "earliest" or "latest"
+poll_timeout_sec  = 1.0
+batch_size        = 500           # messages per internal batch
+
+# Optional auth (leave empty for PLAINTEXT)
+security_protocol = "PLAINTEXT"   # PLAINTEXT | SSL | SASL_PLAINTEXT | SASL_SSL
+sasl_mechanism    = ""            # PLAIN | SCRAM-SHA-256 | SCRAM-SHA-512
+sasl_username     = ""
+sasl_password     = ""
+ssl_ca_location   = ""            # path to CA cert for SSL
+
+[buffer]
+rotate_mb             = 64        # rotate when buffer reaches this size (MB)
+rotate_sec            = 3600      # rotate after this many seconds even if not full
+output_dir            = "/tmp/pfc-kafka"
+prefix                = "kafka"   # filename prefix: kafka_20260115_100000.pfc
+commit_after_compress = true      # commit Kafka offsets only after successful PFC compression
+
+[pfc]
+binary = "/usr/local/bin/pfc_jsonl"
+
+[s3]
+enabled = false
+bucket  = "my-log-archive"
+prefix  = "kafka-logs/"
+region  = "us-east-1"
+# Credentials via AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY or IAM role
