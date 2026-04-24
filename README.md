@@ -221,5 +221,6 @@ python3 tests/e2e_integration_test.py
 PFC-Kafka-Consumer is an independent open-source project and is not affiliated with, endorsed by, or associated with the Apache Software Foundation, Apache Kafka, or Confluent.
 ## License
 
-Free for personal and open-source use.
-Commercial use requires a written license — [info@impossibleforge.com](mailto:info@impossibleforge.com)
+pfc-kafka-consumer (this repository) is released under the MIT License — see [LICENSE](LICENSE).
+
+The PFC-JSONL binary (`pfc_jsonl`) is proprietary software — free for personal and open-source use. Commercial use requires a license: [info@impossibleforge.com](mailto:info@impossibleforge.com)
