@@ -4,7 +4,7 @@
 
 Commits Kafka offsets **only after successful PFC compression** — no data loss if the process crashes mid-flight.
 
-[![License](https://img.shields.io/badge/license-PFC%20Commercial%20v1.0-blue)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Part of PFC-JSONL Ecosystem](https://img.shields.io/badge/ecosystem-PFC--JSONL-brightgreen)](https://github.com/ImpossibleForge/pfc-jsonl)
 
 ---
@@ -213,6 +213,12 @@ python3 tests/e2e_integration_test.py
 
 ---
 
+
+---
+
+## Disclaimer
+
+PFC-Kafka-Consumer is an independent open-source project and is not affiliated with, endorsed by, or associated with the Apache Software Foundation, Apache Kafka, or Confluent.
 ## License
 
 Free for personal and open-source use.
