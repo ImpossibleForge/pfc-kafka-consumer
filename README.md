@@ -210,6 +210,7 @@ python3 tests/e2e_integration_test.py
 | [pfc-gateway](https://github.com/ImpossibleForge/pfc-gateway) | HTTP query gateway |
 | [pfc-migrate](https://github.com/ImpossibleForge/pfc-migrate) | Migrate from gzip/zstd/S3/Azure/GCS |
 | **pfc-kafka-consumer** | **Kafka / Redpanda consumer** |
+| [pfc-grafana](https://github.com/ImpossibleForge/pfc-grafana) | Grafana data source plugin for PFC archives |
 
 ---
 
