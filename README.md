@@ -198,19 +198,15 @@ python3 tests/e2e_integration_test.py
 
 ---
 
-## Part of the PFC-JSONL Ecosystem
+## Part of the PFC Ecosystem
 
-| Repo | What it does |
-|------|-------------|
-| [pfc-jsonl](https://github.com/ImpossibleForge/pfc-jsonl) | Core compressor (BWT + rANS) |
-| [pfc-duckdb](https://github.com/ImpossibleForge/pfc-duckdb) | DuckDB community extension |
-| [pfc-fluentbit](https://github.com/ImpossibleForge/pfc-fluentbit) | Native Fluent Bit output plugin |
-| [pfc-vector](https://github.com/ImpossibleForge/pfc-vector) | High-performance HTTP ingest daemon |
-| [pfc-otel-collector](https://github.com/ImpossibleForge/pfc-otel-collector) | OpenTelemetry OTLP/HTTP exporter |
-| [pfc-gateway](https://github.com/ImpossibleForge/pfc-gateway) | HTTP query gateway |
-| [pfc-migrate](https://github.com/ImpossibleForge/pfc-migrate) | Migrate from gzip/zstd/S3/Azure/GCS |
-| **pfc-kafka-consumer** | **Kafka / Redpanda consumer** |
-| [pfc-grafana](https://github.com/ImpossibleForge/pfc-grafana) | Grafana data source plugin for PFC archives |
+**[→ View all PFC tools & integrations](https://github.com/ImpossibleForge/pfc-jsonl#ecosystem)**
+
+| Direct integration | Why |
+|---|---|
+| [pfc-gateway](https://github.com/ImpossibleForge/pfc-gateway) | Query the archives pfc-kafka-consumer creates — HTTP REST, no DuckDB required |
+| [pfc-fluentbit](https://github.com/ImpossibleForge/pfc-fluentbit) | Alternative ingest — log pipeline instead of message queue |
+| [pfc-vector](https://github.com/ImpossibleForge/pfc-vector) | Alternative ingest — high-performance HTTP sink |
 
 ---
 
